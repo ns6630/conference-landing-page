@@ -7,7 +7,7 @@ const Page = styled.div`
   background-image: url(${bg});
   background-repeat: repeat;
   min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Spartan', sans-serif;
   color: #fbf7f9;
 `;
 
