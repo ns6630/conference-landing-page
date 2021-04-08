@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "./Button";
 
 interface JumbotronProps {
   date: string;
@@ -14,6 +15,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({
     <StyledJumbotron>
       <JumbotronDate>{date}</JumbotronDate>
       <JumbotronTitle>{title}</JumbotronTitle>
+      <Button href="#registration">register now</Button>
     </StyledJumbotron>
   );
 };
@@ -27,7 +29,7 @@ const JumbotronDate = styled.p`
 `;
 
 const JumbotronTitle = styled.h1`
-  font-size: 7vw;
+  font-size: 6vw;
   line-height: 1.2;
   margin-top: 30px;
   font-weight: 800;
