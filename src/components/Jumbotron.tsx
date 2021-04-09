@@ -31,7 +31,7 @@ const JumbotronDate = styled.p`
 const JumbotronTitle = styled.h1`
   font-size: 6vw;
   line-height: 1.2;
-  margin-top: 30px;
+  margin: 30px 0 20px 0;
   font-weight: 800;
   word-spacing: 99999rem;
   text-transform: uppercase;

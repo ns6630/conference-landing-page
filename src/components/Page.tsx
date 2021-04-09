@@ -8,7 +8,7 @@ const Page = styled.div`
   background-repeat: repeat;
   min-height: 100vh;
   font-family: 'Spartan', sans-serif;
-  color: #fbf7f9;
+  color: #dcdcdc;
 `;
 
 export default Page;
