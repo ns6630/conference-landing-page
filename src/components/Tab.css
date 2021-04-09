@@ -1,0 +1,10 @@
+.tab-name {
+    color: #dcdcdc55;
+    text-transform: uppercase;
+    padding: 1em 0;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.tab-name.tab-name__active {
+    color: #dcdcdc;
+}

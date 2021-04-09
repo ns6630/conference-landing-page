@@ -1,0 +1,31 @@
+.schedule {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 1em;
+    color: #dcdcdccc;
+    margin-bottom: 40px;
+}
+
+.schedule__time {
+    text-transform: uppercase;
+    font-size: .75rem;
+    line-height: 1.5em;
+    padding-top: 1em;
+}
+
+.schedule__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule__title {
+    color: #dcdcdc;
+    font-weight: bold;
+    line-height: 1.75em;
+    margin-top: .5em;
+}
+
+.schedule__description {
+    font-size: .75rem;
+    line-height: 1.5em;
+}
