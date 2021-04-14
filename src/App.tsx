@@ -1,3 +1,4 @@
+import React from "react";
 import Page from "./components/Page";
 import Header from "./components/Header";
 import Logo from "./components/Logo";
@@ -17,6 +18,10 @@ import photo2 from "./static/img/people/2.jpg";
 import photo3 from "./static/img/people/3.jpg";
 import photo4 from "./static/img/people/4.jpg";
 import Button from "./components/Button";
+import ScheduleWrapper from "./components/ScheduleWrapper";
+import Tabs from "./components/Tabs";
+import Tab from "./components/Tab";
+import Schedule from "./components/Schedule";
 
 function App() {
   return (
@@ -69,6 +74,66 @@ function App() {
               <Button>see more</Button>
             </Cards>
           </SpeakersRight>
+        </PageSection>
+
+        <PageSection style={{gridTemplateColumns: "1fr"}}>
+          <ScheduleWrapper>
+            <Tabs>
+              <Tab 
+                index={0}
+                title={"day 1"}
+              >
+                <Schedule
+                  time={"10 am - 11 am"}
+                  title={"Registration & Technical Discussions"}
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo efficitur neque, nec interdum massa ornare non.
+                </Schedule>
+                <Schedule
+                  time={"11 am - 12 am"}
+                  title={"Introduction to KDC"}
+                >
+                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam ac quam scelerisque, tempus diam a, tincidunt libero.
+                </Schedule>
+                <Schedule
+                  time={"12 am - 1 pm"}
+                  title={"Panel Discussion: AI in Product Design"}
+                >
+                  Maecenas vitae dolor in felis dapibus tristique. Nullam congue erat sit amet lorem euismod, id congue tellus dapibus.
+                </Schedule>
+                <Schedule
+                  time={"1 pm - 2 pm"}
+                  title={"Lunch Break"}
+                >
+                  Vestibulum sollicitudin, lacus vitae consectetur blandit, libero mauris elementum ligula, sed maximus elit risus at enim. Nullam vitae tincidunt libero, at vulputate quam.
+                </Schedule>
+                <Schedule
+                  time={"2 pm - 6 pm"}
+                  title={"Talks from John whatson"}
+                >
+                  Nam dignissim orci vel diam lobortis ullamcorper. Pellentesque nec orci urna.
+                </Schedule>
+              </Tab>
+              <Tab 
+                index={1}
+                title={"day 2"}
+              >
+                Content 1
+              </Tab>
+              <Tab 
+                index={2}
+                title={"day 3"}
+              >
+                Content 2
+              </Tab>
+            </Tabs>
+            <section>
+              <Headline>schedule</Headline>
+              <Paragraph>
+              Vivamus quis nisl sit amet neque ultrices pharetra ac id diam. Cras euismod nec quam scelerisque facilisis. Curabitur nec massa eget libero tristique elementum nec quis nisi. Maecenas eu enim bibendum, maximus velit vel, ullamcorper turpis. Sed lacus erat, tincidunt et tellus sit amet, gravida venenatis quam. Aliquam pretium vehicula diam, laoreet gravida tortor porttitor et. Suspendisse vitae massa turpis.
+              </Paragraph>
+            </section>
+          </ScheduleWrapper>
         </PageSection>
       </Page>
     </div>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import MenuItem from "./MenuItem";
 
 const Menu = styled.ul`
   display: flex;
