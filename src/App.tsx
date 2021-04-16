@@ -7,7 +7,7 @@ import MenuItem from "./components/MenuItem";
 import FirstSection from "./components/FirstSection";
 import Jumbotron from "./components/Jumbotron";
 import PageSection from "./components/PageSection";
-import SpeakersLeft from "./components/SpeakersLeft";
+import BorderTopWrapper from "./components/BorderTopWrapper";
 import SpeakersRight from "./components/SpeakersRight";
 import Headline from "./components/Headline";
 import Paragraph from "./components/Paragraph";
@@ -17,11 +17,16 @@ import photo1 from "./static/img/people/1.jpg";
 import photo2 from "./static/img/people/2.jpg";
 import photo3 from "./static/img/people/3.jpg";
 import photo4 from "./static/img/people/4.jpg";
+import conf1 from "./static/img/conference1.jpg";
+import conf2 from "./static/img/conference2.jpg";
 import Button from "./components/Button";
 import ScheduleWrapper from "./components/ScheduleWrapper";
 import Tabs from "./components/Tabs";
 import Tab from "./components/Tab";
 import Schedule from "./components/Schedule";
+import ConferenceImg from "./components/ConferenceImg";
+import RegistrationRight from "./components/RegistrationRight";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -41,7 +46,7 @@ function App() {
         </FirstSection>
 
         <PageSection>
-          <SpeakersLeft>
+          <BorderTopWrapper>
             <Headline>speakers</Headline>
             <Paragraph>
               Phasellus vestibulum mollis sollicitudin. Nullam ac urna vel
@@ -56,7 +61,7 @@ function App() {
               quam purus, vestibulum ut orci sit amet, condimentum aliquet
               risus.
             </Paragraph>
-          </SpeakersLeft>
+          </BorderTopWrapper>
           <SpeakersRight>
             <Cards>
               <Card photo={photo1} name="John Watson" position="UX Designer" />
@@ -135,6 +140,25 @@ function App() {
             </section>
           </ScheduleWrapper>
         </PageSection>
+
+        <PageSection>
+          <BorderTopWrapper>
+            <Headline>registration</Headline>
+            <Paragraph>
+              Mauris a mattis augue, ut tempor diam. Nullam vitae lorem maximus, porta purus ac, imperdiet felis. Maecenas tincidunt euismod odio, nec pulvinar nisi imperdiet a. Proin maximus pharetra placerat. Nunc massa ante, efficitur eget sapien vel, tempor mollis quam. Praesent finibus sagittis lorem id viverra. Ut mattis eros a purus mattis, sit amet ullamcorper odio condimentum. Fusce accumsan vitae leo tristique rhoncus. Nullam iaculis mi nec nulla venenatis varius. Mauris ut laoreet lacus. 
+            </Paragraph>
+            <Button style={{marginTop: "40px"}}>register now</Button>
+          </BorderTopWrapper>
+          <RegistrationRight>
+            <ConferenceImg src={conf1}/>
+            <ConferenceImg src={conf2}/>
+            <img src="/src/static/img/conference2.jpg" alt=""/>
+          </RegistrationRight>
+        </PageSection>
+
+        <Footer>
+          Orel Design Conference &copy; 2021. All Rights Reserved.
+        </Footer>
       </Page>
     </div>
   );
