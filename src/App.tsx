@@ -30,12 +30,13 @@ import Footer from "./components/Footer";
 import Composition from "./components/Composition";
 import GlobalStyles from "./components/GlobalStyles";
 import Link from "./components/Link";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <Page>
+      <Page id={"top"}>
         <Header>
           <Logo />
           <Menu>
@@ -164,6 +165,8 @@ function App() {
         <Footer>
           Orel Design Conference &copy; 2021. All Rights Reserved.
         </Footer>
+
+        <ScrollToTop href={"#top"}>&#9650;</ScrollToTop>
       </Page>
     </div>
   );
