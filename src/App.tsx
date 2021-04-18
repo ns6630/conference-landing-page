@@ -27,6 +27,7 @@ import Schedule from "./components/Schedule";
 import ConferenceImg from "./components/ConferenceImg";
 import RegistrationRight from "./components/RegistrationRight";
 import Footer from "./components/Footer";
+import Composition from "./components/Composition";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
 
         <FirstSection>
           <Jumbotron date="april 9-11, 2021" title="orel design conference" />
+          <Composition />
         </FirstSection>
 
         <PageSection>
