@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Link = styled.a.attrs(props => ({ href: props.href ? props.href : ""}))`
   display: inline-block;
+  line-height: 1.2em;
   text-decoration: none;
   color: #dcdcdc;
   text-transform: lowercase;
