@@ -28,17 +28,20 @@ import ConferenceImg from "./components/ConferenceImg";
 import RegistrationRight from "./components/RegistrationRight";
 import Footer from "./components/Footer";
 import Composition from "./components/Composition";
+import GlobalStyles from "./components/GlobalStyles";
+import Link from "./components/Link";
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyles />
       <Page>
         <Header>
           <Logo />
           <Menu>
-            <MenuItem>speakers</MenuItem>
-            <MenuItem>schedule</MenuItem>
-            <MenuItem>registration</MenuItem>
+            <MenuItem><Link href={"#speakers"}>speakers</Link></MenuItem>
+            <MenuItem><Link href={"#schedule"}>schedule</Link></MenuItem>
+            <MenuItem><Link href={"#registration"}>registration</Link></MenuItem>
           </Menu>
         </Header>
 
@@ -47,7 +50,7 @@ function App() {
           <Composition />
         </FirstSection>
 
-        <PageSection>
+        <PageSection id={"speakers"}>
           <BorderTopWrapper>
             <Headline>speakers</Headline>
             <Paragraph>
@@ -83,7 +86,7 @@ function App() {
           </SpeakersRight>
         </PageSection>
 
-        <PageSection style={{gridTemplateColumns: "1fr"}}>
+        <PageSection id={"schedule"} style={{gridTemplateColumns: "1fr"}}>
           <ScheduleWrapper>
             <Tabs>
               <Tab 
@@ -143,7 +146,7 @@ function App() {
           </ScheduleWrapper>
         </PageSection>
 
-        <PageSection>
+        <PageSection id={"registration"}>
           <BorderTopWrapper>
             <Headline>registration</Headline>
             <Paragraph>
